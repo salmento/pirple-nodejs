@@ -323,14 +323,14 @@ helpers.stripe = (amount, currency, description, source, callback) => {
 helpers.mailgun = (subject, text, callback) => {
   const payload = {
     from: "nodejs@masterclass.assignment3.com",
-    to: "syahrul@abcdead.com", // authorized domain
+    to: "salmento@abcdead.com", // authorized domain
     subject,
     text
   };
   const stringPayload = querystring.stringify(payload);
 
   const requestDetails = {
-    auth: "api:1efc409e57e9f2749fa7973288d94188-c8e745ec-3209c115",
+    auth: "api:",
     protocol: "https:",
     hostname: "api.mailgun.net",
     method: "POST",
