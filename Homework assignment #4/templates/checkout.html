@@ -1,0 +1,27 @@
+<h1>Checkout</h1>
+<div class="formWrapper">
+  <form action="/api/checkout" method="POST">
+    <div class="inputWrapper">
+      <div class="inputLabel">Credit Card Number</div>
+      <input type="text" id="ccNumber" placeholder="4242424242424242" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Credit Card Type</div>
+      <select id="cardType">
+        <option value="tok_visa">Visa</option>
+        <option value="tok_visa_debit">Visa (debit)</option>
+        <option value="tok_mastercard">Mastercard</option>
+        <option value="tok_mastercard_debit">Mastercard (debit)</option>
+        <option value="tok_mastercard_prepaid">Mastercard (prepaid)</option>
+        <option value="tok_amex">American Express</option>
+        <option value="tok_discover">Discover</option>
+        <option value="tok_diners">Diners Club</option>
+        <option value="tok_jcb">JCB</option>
+        <option value="tok_unionpay">UnionPay</option>
+      </select>
+    </div>
+    <div class="inputWrapper ctaWrapper">
+      <button id="ccSubmit" type="button" class="cta green">Checkout</button>
+    </div>
+  </form>
+</div>
